@@ -1,9 +1,12 @@
 import "./app.css";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <h1 className="text-[20px] text-blue-600">Hello react + vite app</h1>
+      <Header></Header>
+      <Home></Home>
     </>
   );
 }

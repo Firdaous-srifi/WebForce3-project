@@ -6,16 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      primaryColor: "#0067FF",
-      yellowColor: "#FEB60D",
-      purpleColor: "#9771FF",
-      irisBlueColor: "#01B5C5",
-      headingColor: "#181A1E",
-      textColor: "#4E545F",
-    },
-    
-    boxShadow: {
-      panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;",
+      colors: {  // Add this line
+        primary: "#0067FF",
+        yellow: "#FEB60D",
+        purple: "#9771FF",
+        irisBlue: "#01B5C5",
+        heading: "#181A1E",
+        text: "#4E545F",
+      },
+      boxShadow: {
+        panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;",
+      },
     },
   },
   plugins: [],

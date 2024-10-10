@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import About from '../components/About/About'
 
 const Home = () => {
   return (
@@ -102,6 +103,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <About></About>
       </>
   )
 }

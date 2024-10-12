@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import About from '../components/About/About'
+import { BsArrowRight } from 'react-icons/bs'
 
 const Home = () => {
   return (

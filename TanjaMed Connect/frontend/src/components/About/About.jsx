@@ -19,7 +19,8 @@ const About = () => {
                         <p className='text__para'>For 30yrs the us has ....</p>
                         <p className='text__para mt-[30px]'>our best is something we strive in each day</p>
                         <Link to="/">
-                        <button className='btn'>Learn More</button></Link>
+                        <button className='btn'>Learn More</button>
+                        </Link>
                     </div>
                 </div>
             </div>

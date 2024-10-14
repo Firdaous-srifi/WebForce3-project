@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import About from '../components/About/About'
 import { BsArrowRight } from 'react-router-dom'
 import ServicesList from '../components/services/ServicesList'
-import DoctorsList from '../components/doctors/DoctorsList'
+import DoctorsList from '../components/Doctors/DoctorsList'
+import FaqList from '../components/Faq/FaqList'
 
 
 const Home = () => {
   return (
     <>
-    {/*HERO SECTION */}
+      {/*HERO SECTION start */}
       <section className='hero__section pt-[60px] 2xl:h-[800px]'>
         <div className='container'>
           <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
@@ -49,14 +50,14 @@ const Home = () => {
                 <img className='w-full' src="" alt="TanjaMed Connect/frontend/src/assets/images/hero-img01.png" />
               </div>
               <div className='mt-[30px]'>
-                <img className='w-full mb-[30px]' src={hero-img02} alt="" />
+                <img className='w-full mb-[30px]' src='TanjaMed Connect/frontend/src/assets/images/hero-img02.png' alt="" />
                 <img className='w-full' src="TanjaMed Connect/frontend/src/assets/images/hero-img03.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/**HERO SECTION */}
+      {/**HERO SECTION end*/}
       <section>
         <div className='container'>
           <div className='lg:w-[470px] mx-auto'>
@@ -108,6 +109,7 @@ const Home = () => {
         </div>
       </section>
       <About></About>
+
       {/*services section start */}
       <ServicesList></ServicesList>
       <section>
@@ -119,6 +121,7 @@ const Home = () => {
         </div>
       </section>
       {/*services section end */}
+
       {/**Feature Section start*/}
       <div className='xl:w-[670px]'>
         <h2 className='heading'>Get virtual treatement <br></br>anytime</h2>
@@ -151,7 +154,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/**Feature Section end*/}
 
       {/**our great doctors start*/}
@@ -165,7 +167,33 @@ const Home = () => {
         </div>
       </section>
       {/**our great doctors end*/}
-      
+
+      {/*faq section start */}
+      <section>
+        <div className='container'>
+          <div className='flex justify-between gap-[50px] lg:gap-0'>
+            <div className='w-1/2 hidden md:block'>
+              <img src="TanjaMed Connect/frontend/src/assets/images/faq-img.png" alt="" />
+            </div>
+            <div className='w-full md:w-1/2'>
+              <h2 className='heading'>most questions by our beloved patients</h2>
+              <FaqList></FaqList>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*faq section end*/}
+
+      {/*Testimonial start */}
+      <section>
+        <div className='container'>
+          <div className='xl:w-[470px] mx-auto'>
+            <h2 className='heading text-center'>What our patient say</h2>
+            <p className='text__para text-center'>World-class care for everyone. Our health system offers unmatched,expert health care.</p>
+          </div>
+        </div>
+      </section>
+      {/*Testimonial end */}
       </>
   )
 }

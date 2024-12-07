@@ -13,7 +13,6 @@ const Routers = () => {
     <Routes>
         <Route>
         <Home></Home>
-        <Home></Home>
         <Doctors></Doctors>
         <DoctorDetails></DoctorDetails>
         <Login></Login>

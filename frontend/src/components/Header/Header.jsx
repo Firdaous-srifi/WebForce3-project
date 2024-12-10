@@ -2,6 +2,7 @@ import {useEffect,useRef} from 'react'
 import {NavLink, Link} from 'react-router-dom'
 import { BiMenu } from 'react-icons/bi'
 
+
 const navLinks = [
   {
     path:'/home',
@@ -47,7 +48,7 @@ const Header = () => {
         <div className='flex items-center justify-between'>
            {/*LOGO */}
           <div>
-            <img src="logo.png" alt="" />
+            <img src="" alt="logo" />
           </div>
           {/*MENU*/}
           <div className='navigation' ref={menuRef} onClick={toggleMenu}>
@@ -73,7 +74,7 @@ const Header = () => {
             <div>
               <Link to="/">
               <figure className='w-[35px] h-[35px] rounded-full cursor-pointer'>
-                <img src="about-card.png" className='w-full rounded-full' alt="" />
+                <img src="/assets/images/about-card.png" className='w-full rounded-full' alt="" />
               </figure>
               </Link>
             </div>

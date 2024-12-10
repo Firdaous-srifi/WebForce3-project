@@ -1,77 +1,75 @@
-import React from 'react'
-import { Link } from 'react-scroll'
-import {RiLinkedinFill} from 'react-icons/ri'
-import {AiFillGithub, AiOutlineInstagram, AiFillYoutube} from 'react-icons/ai'
+import React from 'react';
+import { Link } from 'react-scroll';
+import { RiLinkedinFill } from 'react-icons/ri';
+import { AiFillGithub, AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai';
 
-
-const socialLinks = {
+const socialLinks = [
   {
-    path:  'https://www.youtube.com/in/',
+    path: 'https://www.youtube.com/in/',
     icon: <AiFillYoutube className='group-hover:text-white w-4 h-5'></AiFillYoutube>,
   },
   {
-    path:  'https://www.youtube.com/in/',
+    path: 'https://www.github.com/in/',
     icon: <AiFillGithub className='group-hover:text-white w-4 h-5'></AiFillGithub>,
   },
   {
-    path:  'https://www.youtube.com/in/',
+    path: 'https://www.instagram.com/in/',
     icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5'></AiOutlineInstagram>,
   },
   {
-    path:  'https://www.youtube.com/in/',
+    path: 'https://www.linkedin.com/in/',
     icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5'></RiLinkedinFill>,
   },
-};
+];
 
-const quickLink01 = {
+const quickLink01 = [
   {
-    path:"/home",
-    display:"Home",
+    path: "/home",
+    display: "Home",
   },
   {
-    path:"/",
-    display:"About Us",
+    path: "/about-us",
+    display: "About Us",
   },
   {
-    path:"/services",
-    display:"Services",
+    path: "/services",
+    display: "Services",
   },
   {
-    path:"/",
-    display:"Blog",
+    path: "/blog",
+    display: "Blog",
   },
-};
+];
 
-const quickLink02 = {
+const quickLink02 = [
   {
-    path:"/find-a-doctor",
-    display:"Find a Doctor",
+    path: "/find-a-doctor",
+    display: "Find a Doctor",
   },
   {
-    path:"/",
-    display:"Request  an Appointment",
+    path: "/request-appointment",
+    display: "Request an Appointment",
+  },
+  {
+    path: "/find-location",
+    display: "Find a Location",
+  },
+  {
+    path: "/get-opinion",
+    display: "Get a Opinion",
+  },
+];
 
+const quickLink03 = [
+  {
+    path: "/donate",
+    display: "Donate",
   },
   {
-    path:"/",
-    display:"Find a Location",
+    path: "/contact",
+    display: "Contact Us",
   },
-  {
-    path:"/",
-    display:"Get a Opinion",
-  },
-};
-
-const quickLink03 = {
-  {
-    path:"/",
-    display:"Donater",
-  },
-  {
-    path:"/contact",
-    display:"Contact Us",
-  },
-};
+];
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -82,25 +80,34 @@ const Footer = () => {
         <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
           <div>
             <img src="TanjaMed Connect/frontend/src/assets/images/logo.png" alt="" />
-            <p className='text-[16px] leading-7 font-[400] text-text mt-4'>Copyright  {year} TanjaMed Connect. All rights reserved.</p>
+            <p className='text-[16px] leading-7 font-[400] text-text mt-4'>
+              Copyright {year} TanjaMed Connect. All rights reserved.
+            </p>
             <div className='flex items-center gap-3 mt-4'>
               {socialLinks.map((link, index) => (
-                <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primary hover:border-none'>
-                  {Link.icon}
-                </Link>
+                <a
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                  className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primary hover:border-none'
+                >
+                  {link.icon}
+                </a>
               ))}
             </div>
           </div>
-      
+
           <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-heading'>
-               Quick Links
+              Quick Links
             </h2>
-
             <ul>
-              {quickLinks01.map((item, index) => (
+              {quickLink01.map((item, index) => (
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>
+                    {item.display}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -108,13 +115,14 @@ const Footer = () => {
 
           <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-heading'>
-                I want to :
+              I want to:
             </h2>
-
             <ul>
-              {quickLinks02.map((item, index) => (
+              {quickLink02.map((item, index) => (
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>
+                    {item.display}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -122,13 +130,14 @@ const Footer = () => {
 
           <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-heading'>
-                Support
+              Support
             </h2>
-
             <ul>
-              {quickLinks03.map((item, index) => (
+              {quickLink03.map((item, index) => (
                 <li key={index} className='mb-4'>
-                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>{item.display}</Link>
+                  <Link to={item.path} className='text-[16px] leading-7 font-[400] text-text'>
+                    {item.display}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -136,7 +145,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

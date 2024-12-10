@@ -6,13 +6,13 @@ import doctorImg03 from "../assets/images/doctor-img03.png";
 export const doctors = [
   {
     id: "01",
-    name: "Dr. Alfaz Ahmed",
+    name: "Dr. Firdaous",
     specialization: "Surgeon",
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg01,
     totalPatients: 1500,
-    hospital: "Mount Adora Hospital, Sylhet.",
+    hospital: "Morocco, Sylhet.",
   },
   {
     id: "02",

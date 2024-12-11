@@ -49,7 +49,7 @@ const Header = () => {
       <div className='container'>
         <div className='flex items-center justify-between'>
            {/*LOGO */}
-          <div>
+          <div className='w-[120px] h-[100px]'>
             <img src={logo} alt="logo" />
           </div>
           {/*MENU*/}

@@ -15,7 +15,7 @@ const DoctorsCard = ({doctor}) => {
   return (
     <div className='p-3 lg:p-5'>
       <div>
-        <img src={photo} alt="" className='w-full' />
+        <img src='/images/patient-avatar.png' alt="" className='w-full' />
       </div>
       <h2 className='text-[18px] leading-[30px] lg:text-[26px] lg:leading-9 text-heading font-[700] mt-3 lg:mt-5'>{name}
       </h2>
@@ -26,7 +26,7 @@ const DoctorsCard = ({doctor}) => {
 
         <div className='flex items-center gap-[6px]'> 
           <span className='flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-semibold text-heading'>
-            <img src={starIcon} alt="" />{avgRating}
+            <img src='/images/star.png' alt="" />{avgRating}
           </span>
           <span className='text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[400] text-text'>
             ({totalRating})

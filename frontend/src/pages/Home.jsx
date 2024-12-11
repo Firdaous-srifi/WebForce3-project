@@ -6,6 +6,7 @@ import DoctorsList from '../components/Doctors/DoctorsList';
 import FaqList from '../components/Faq/FaqList';
 
 // Import images at the top
+import heroimg1 from '../assets/images/hero-img01.png';
 import heroimg3 from '../assets/images/hero-img03.png'; // Corrected path for images
 import heroimg2 from '../assets/images/hero-img02.png';
 import featureImg from '../assets/images/feature-img.png';
@@ -58,7 +59,7 @@ const Home = () => {
             {/* HERO IMAGES */}
             <div className="flex gap-[30px] justify-end">
               <div>
-                <img className="w-full" src={heroimg3} alt="hero image" />
+                <img className="w-full" src={heroimg1} alt="hero image" />
               </div>
               <div className="mt-[30px]">
                 <img className="w-full mb-[30px]" src={heroimg2} alt="hero image 2" />

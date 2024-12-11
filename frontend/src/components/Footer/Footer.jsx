@@ -79,7 +79,7 @@ const Footer = () => {
       <div className='container'>
         <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
           <div>
-            <img src="TanjaMed Connect/frontend/src/assets/images/logo.png" alt="" />
+            <img src="/images/logo.png" alt="" />
             <p className='text-[16px] leading-7 font-[400] text-text mt-4'>
               Copyright {year} TanjaMed Connect. All rights reserved.
             </p>

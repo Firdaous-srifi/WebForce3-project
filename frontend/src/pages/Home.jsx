@@ -4,6 +4,7 @@ import About from '../components/About/About';
 import ServicesList from '../components/services/ServicesList';
 import DoctorsList from '../components/Doctors/DoctorsList';
 import FaqList from '../components/Faq/FaqList';
+import Footer from '../components/Footer/Footer';
 
 // Import images at the top
 import heroimg1 from '../assets/images/hero-img01.png';
@@ -223,7 +224,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer></Footer>
     </>
+    
   );
 };
 

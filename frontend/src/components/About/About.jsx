@@ -21,8 +21,8 @@ const About = () => {
                 {/**ABOUT CONTENT */}
                 <div className='w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2'>
                     <h2 className='heading'>Proud to be one of the nation's best</h2>
-                    <p className='text__para'>For 30 years, the US has ....</p>
-                    <p className='text__para mt-[30px]'>Our best is something we strive for each day.</p>
+                    <p className='text__para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laboriosam aliquid facilis quaerat laudantium eum cum, beatae dolorum deserunt ea velit cupiditate autem delectus est, illum in qui! Perferendis, repudiandae.</p>
+                    <p className='text__para mt-[30px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo molestias praesentium autem laborum cumque vitae officia expedita, ea doloribus rerum voluptatum commodi quasi recusandae veritatis iste esse. Fugiat, ex provident?</p>
                     <Link to="/about">
                         <button className='btn'>Learn More</button>
                     </Link>

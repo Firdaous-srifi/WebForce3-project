@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {BsArrowRight} from "react-icons/bs"
 
 const servicesCard = ({item, index}) => {
+  const {name, desc, bgColor, textColor} = item
   return (
     <div className='py-[30px] px-3 lg:px-5'>
         <h2 className='text-[26px] leading-9 text-heading font-[700]'>{name}</h2>

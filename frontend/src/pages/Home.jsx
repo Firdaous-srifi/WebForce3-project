@@ -137,7 +137,7 @@ const Home = () => {
       <About />
 
       {/* Services Section */}
-      <ServicesList />
+      
 
       <section>
         <div className="container">
@@ -147,6 +147,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestiae nemo harum aspernatur unde fuga iusto voluptatibus iste pariatur perspiciatis iure enim, sint ipsa fugiat neque, sequi voluptates voluptate aut?
             </p>
           </div>
+          <ServicesList />
         </div>
       </section>
 

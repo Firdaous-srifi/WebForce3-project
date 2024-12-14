@@ -1,6 +1,6 @@
 import React from 'react'
 import servicesCard from './ServicesCard'
-import {services} from "./../../data/services"
+import {services} from './../../data/services'
 
 const ServicesList = ({item, index}) => {
   return (

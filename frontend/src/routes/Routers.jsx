@@ -12,16 +12,14 @@ import Contact from '../pages/Contact'
 const Routers = () => {
   return (
     <Routes>
-        <Route>
-        <Home></Home>
-        <Doctors></Doctors>
-        <DoctorDetails></DoctorDetails>
-        <Login></Login>
-        <Signup></Signup>
-        <Contact></Contact>
-        <Services></Services>
-        
-        </Route>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/doctors' element={<Doctors/>}/>
+        <Route path='/doctors/:id' element={<DoctorDetails/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Signup/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/services' element={<Services/>}/>
     </Routes>
   )
 }

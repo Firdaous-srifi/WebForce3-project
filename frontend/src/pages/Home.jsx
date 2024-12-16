@@ -108,7 +108,7 @@ const Home = () => {
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
                   World-Class care for everyone. Our health system offers unmatched, expert health care. From the lab to the clinic.
                 </p>
-                <Link to="/locations" className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none">
+                <Link to="/services" className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none">
                   {/* Add an icon here if needed */}
                 </Link>
               </div>

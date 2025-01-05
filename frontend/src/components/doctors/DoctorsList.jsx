@@ -5,13 +5,6 @@ import DoctorsCard from './DoctorsCard';
 
 const DoctorsList = () => {
   const [doctors, setDoctors] = useState([]);
-
-
-
-
-
-
-  
   useEffect(() => {
     // Fetch doctors from API (replace with your actual API endpoint)
     fetch('/api/doctors')

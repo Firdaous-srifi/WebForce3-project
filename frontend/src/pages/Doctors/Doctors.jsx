@@ -11,7 +11,7 @@ const Doctors = () => {
             <input type="search"
             className='py-4 pl-4 pr-2 bg-transparent w-full focus:outline-none cursor-pointer placeholder:text-text'
             placeholder='Search for a doctor' />
-             />
+            
             <button className='btn mt-0 rounded-[0px] rounded-r-md'>Search</button>
           </div>
         </div>

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DoctorsCard from './DoctorsCard';
 
-
-
 const DoctorsList = () => {
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {

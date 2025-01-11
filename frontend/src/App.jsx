@@ -8,11 +8,9 @@ import Routers from "./routes/Routers";
 function App() {
   return (
     <>
-    
       <Header></Header>
       <Home></Home>
       <Routers></Routers>
-     
     </>
   );
 }
